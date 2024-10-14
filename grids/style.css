@@ -1,0 +1,16 @@
+.grid-container{
+    display: grid;/*Definimos grid*/
+    grid-template-columns:(repeat(3,1fr)) ;/*Definir columnas /unidad de medidas fracciones*/
+    gap: 10px;
+    grid-template-rows:repeat(2,100px);/*Definir filas*/
+    justify-items: center;
+    align-items: start;
+    justify-content: space-between;
+    align-content: space-evenly;
+}
+.grid-item{
+    background-color: aqua;
+    border: 1px solid antiquewhite;
+    padding: 20px;
+    text-align: center;
+}

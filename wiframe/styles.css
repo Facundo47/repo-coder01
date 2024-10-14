@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.padre{
+    background-color: orange;
+    height: 600px;
+    /*padding: 20px 18px;*/
+    /*Padding :1 valor/2valores 4 valores/opciones separadas*/
+    
+    
+    /*Flebox*/
+   /* display: flex;
+    flex-direction: colum;
+    justify-content:space-between;
+    align-items:flex-start;*/
+}
+
+div{
+    border: solid 2px black;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color:blueviolet;
+}
+
+.hijo{
+    margin: 20px 30px
+    /*Marfin 1 valor /2valores/4valores /opciones separada*/
+}

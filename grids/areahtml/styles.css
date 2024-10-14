@@ -1,0 +1,21 @@
+.grid-container{
+    display: grid;
+    /*grid area*/
+    grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "main main aside"
+    "footer footer footer";
+    gap: 10px;
+}
+.header{
+    grid-area: header;
+    background-color: aquamarine;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: brown;
+}

@@ -1,0 +1,72 @@
+/*Reset de CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Selector +  propiedad + valor
+
+selector{
+propiedad: valor
+}
+
+
+*/
+
+p{
+    /*color: blue;*/
+    /*nombre de color hexadecimal rgb,rgba*/
+    /*color: #B2D6F9;*/
+    /*color: rgb(0, 0, 255);*/
+    /*color: rgba(0, 0, 255, 0.5);*/
+    font-size: 30px;
+    /*Unidades de Medidas /px  em rem % */
+    margin: 20px;
+}
+
+
+h1{
+
+    color:#333 ;
+    text-align: center;
+}
+
+body{
+    background-color:#f0f0f0 ;
+}
+
+div{
+    color: green;
+}
+
+span{
+    color: red;
+}
+/*Especificidad*/
+div span{
+    color: green;
+}
+    .titulos {
+        text-decoration: underline;
+    }
+
+    #testimonios{
+        text-align: center;
+        text-decoration: underline;
+
+    }
+
+    .titulo-servicios{
+        color: blue;
+        text-transform: uppercase;
+        font-size: 24px;/*Unidad Absoluta*/
+        font-family: "Nunito Sans", sans-serif;
+    }
+    .parrafo-servicios{
+        color: gray;
+        font-style: italic;
+        font-size: 1.5em;/*Unidad Relativa / al tamaño relativo del elemento padre \rem es relativo al  tamaño de la fuente  del elemento raiz*/
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }

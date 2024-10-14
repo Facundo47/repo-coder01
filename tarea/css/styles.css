@@ -1,0 +1,220 @@
+/*Comentario de css*/
+
+/*Paleta de colores 
+#654520 marron
+#825B32 marron
+#6CBEC7 celeste
+#81DAE3 celeste
+
+
+*/
+
+body{
+    font-size: 2.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+
+/*Header*/
+header{
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:sticky;
+    top: 0;
+    
+}
+header img{
+    width: 90px;
+    margin: 5px;
+   
+nav{
+    width:40%;
+
+   } 
+}
+header ul {
+
+list-style-type: none;
+display: flex;
+justify-content: space-evenly;
+}
+
+/* lista-Nav*/
+.lista-nav{
+    
+    list-style: none;
+    color:black;
+    font-size: 25px;
+}
+.lista-nav a{
+    color: black;
+    text-decoration: none;
+}
+ div img{
+    width: 300px;
+    display: flex;
+    gap: 15px; /* Espacio entre imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transición suave al hacer hover */
+    transform: scale(1.2); /* Ajusta el valor para agrandar la imagen */
+    filter: grayscale(20%) brightness(1.1); /* Un poco de escala de grises y brillo */
+    cursor: pointer;
+}
+.banner{
+    height: 200px;
+    color: whitesmoke;
+    background-image: url(/img/gallery5.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    text-shadow: 2px 8px 4px rgba(0,0,0,0.6);
+    font-size: 2.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+/*Unidades */
+.h1{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.h2{
+    font-size: 2rem;
+}
+
+/*rem relativa a la raiz
+1rem=16px
+p=rem*/
+
+/*Em es relativa al padre*/
+.caja{
+    width: 50%;
+    height: 50vh;
+    background-color: lightblue;
+    border: 2px solid blue;
+    text-align: center;
+    line-height: 100px;
+    margin:10px ;
+    flex-grow: 2;/*GROW NO PERMITE CAMBIAR EL ANCHO DE LA CAJA*/
+}
+
+.contenedor{
+    display: flex;/*ACTIVA FLEXBOX*/
+    
+    justify-content:space-between; /*hORIZONTAL*/
+    align-items: center;/*Vertical*/
+    padding: 10px;
+    flex-direction: column-reverse ;
+}
+
+
+
+
+.navbar{
+    background-color:#b6d9fe ;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.container{
+    display: flex;
+}
+
+.sidebar{
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.main-content{
+    width: 75%;
+    background-color: #eaeaea;
+    padding: 20px;
+}
+/*Main de html nosotros*/
+/*.contenedor-grid image{
+    width: 100%;
+    height: 100%;
+}
+.contenedor-grid{
+    display: grid;
+    grid-template-areas: 
+    "h1 h1 h1 "
+    "banner texto1 texto2"
+    "banner cafeteria gallery1"
+    "texto2 gallery1 texto3";
+    /*Define el alto de cada fila*/
+   /* grid-template-rows:100px repeat(50px);
+    grid-template-columns:25% ; 
+    gap: 2px 2px;
+    justify-content: center;
+    /*`Propiedades para acomodar todos los hijos*/
+    /*justify-items: center;
+    align-items: center;
+    
+}
+.titulo-1{
+    grid-area: h1;
+}
+img/banner.jpg{
+    grid-area: banner;
+}
+.texto-2{
+    grid-area: texto2;
+}
+/img/cafeteria.jpg{
+    grid-area: gallery1;
+}
+.texto-3{
+    grid-area: texto3;
+}*/
+
+
+/*Responsive*/
+/*Mobile*/
+/*que lo que coloque entre las{} de la media se aplique en dispositivo hasata los 500px de ancho*/
+@media(max-width:500px){
+    /*header*/
+    header{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    header img {
+        width: 50px;
+    }
+    nav{
+        width: 100%;
+    }
+    /*Footer*/
+    footer div {
+        width: 50%;
+
+    }
+
+}
+
+/*Tablet*/
+/*desde 501px hata 950px*/
+@media(min-width:501px) and(max-width:950px){
+
+}
